@@ -1365,3 +1365,80 @@ section {
     padding: 2.5rem 1.5rem;
   }
 }
+
+/* Interactive Map & Contact Socials Styling */
+.map-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.map-container:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+.map-container iframe {
+  display: block;
+  width: 100%;
+  height: 450px;
+  border: 0;
+  filter: grayscale(15%) sepia(8%);
+  transition: var(--transition);
+}
+
+[data-theme="dark"] .map-container iframe {
+  filter: invert(90%) hue-rotate(180deg) grayscale(20%) sepia(10%);
+}
+
+.map-container iframe:hover {
+  filter: none;
+}
+
+.contact-socials {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* Password Visibility Toggle Styling */
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.password-wrapper input {
+  padding-right: 3.5rem !important; /* Ensure input text doesn't overlap the eye icon */
+}
+
+.password-toggle-btn {
+  position: absolute;
+  right: 1.25rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  z-index: 10;
+}
+
+.password-toggle-btn:hover {
+  color: var(--primary-color);
+}
+
+.password-toggle-btn svg {
+  pointer-events: none; /* Prevents svg target issue in event handlers */
+}
+
+
