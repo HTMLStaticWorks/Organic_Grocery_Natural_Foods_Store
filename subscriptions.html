@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Good Food. Naturally Grown. | Organic Grocery & Natural Foods</title>
-  <meta name="description" content="Discover premium organic groceries, fresh local vegetables, healthy grains, and subscription boxes delivered right from the farm to your doorstep.">
+  <title>Premium Grocery Subscriptions | Weekly Fresh Produce Boxes</title>
+  <meta name="description" content="Subscribe to recurring weekly or monthly farm-fresh vegetable boxes, family staples, healthy snacks, and pantry essentials.">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
 </head>
@@ -16,12 +16,12 @@
       <a href="index.html" class="logo">🌿 Organica</a>
       
       <nav class="nav-menu">
-        <a href="index.html" class="nav-link active">Home 1</a>
+        <a href="index.html" class="nav-link">Home 1</a>
         <a href="home2.html" class="nav-link">Home 2</a>
         <a href="about.html" class="nav-link">About</a>
         <a href="products.html" class="nav-link">Products</a>
         <a href="stories.html" class="nav-link">Farm Stories</a>
-        <a href="subscriptions.html" class="nav-link">Subscriptions</a>
+        <a href="subscriptions.html" class="nav-link active">Subscriptions</a>
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>
 
@@ -38,180 +38,143 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-grid">
-      <div class="hero-content">
-        <span class="hero-tag">100% Certified Organic Foods</span>
-        <h1>Good Food.<br>Naturally Grown.</h1>
-        <p>We partner with local, sustainable family farms to bring premium quality natural vegetables, fresh pantry staples, and healthy snack items straight to your home.</p>
-        <div class="hero-actions">
-          <a href="products.html" class="btn btn-primary">Shop Organic Foods</a>
-          <a href="subscriptions.html" class="btn btn-secondary">Explore Subscriptions</a>
+  <!-- Subscription Boxes Hero -->
+  <section style="background-image: linear-gradient(rgba(27, 67, 50, 0.8), rgba(27, 67, 50, 0.8)), url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=1600'); background-size: cover; background-position: center; padding: 8rem 2rem; text-align: center; color: var(--white); min-height: 400px; display: flex; align-items: center; justify-content: center;">
+    <div style="max-width: 800px; margin: 0 auto;">
+      <span style="color: var(--accent-light); font-weight: 600; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 1rem;">Earthy Convenience</span>
+      <h1 style="font-family: var(--font-serif); font-size: 3.5rem; margin-bottom: 1.5rem; color: var(--white);">Organic Subscription Boxes</h1>
+      <p style="font-size: 1.2rem; color: rgba(255, 255, 255, 0.9); margin-bottom: 0;">Enjoy handpicked fresh vegetables, pantry essentials, and seasonal crop selections delivered directly to your doorstep.</p>
+    </div>
+  </section>
+
+  <!-- Interactive Box Previewer -->
+  <section style="background-color: var(--bg-color); padding: 4rem 2rem;">
+    <div style="max-width: 700px; margin: 0 auto; background-color: var(--bg-card); border: 1px solid var(--border-color); padding: 3rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+      <h3 style="font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: 1.5rem; text-align: center; color: var(--primary-color);">Interactive Box Previewer</h3>
+      <p style="text-align: center; margin-bottom: 2rem;">Select a box to preview its weekly contents, price, and matching local farms.</p>
+      
+      <div class="form-group">
+        <label for="subscriptionSelect">Choose Box Plan</label>
+        <select id="subscriptionSelect" style="border-radius: 50px;">
+          <option value="produce">Fresh Produce Box ($35.00/week)</option>
+          <option value="family">Family Essentials Box ($65.00/week)</option>
+          <option value="pantry">Healthy Pantry Box ($85.00/week)</option>
+        </select>
+      </div>
+
+      <div style="background-color: var(--bg-alt); padding: 2rem; border-radius: var(--radius-md); margin-top: 2rem; border: 1px solid var(--border-color);">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+          <h4 style="font-size: 1.2rem; color: var(--primary-color); margin: 0;">Plan Preview</h4>
+          <span id="subPriceDisplay" style="font-size: 1.6rem; font-weight: 700; color: var(--accent-color);">$35.00</span>
         </div>
+        <p id="subDetailDisplay" style="margin: 0; font-size: 0.95rem; line-height: 1.5;">Includes 8-10 seasonal organic vegetables & fresh fruits, perfect for individuals or couples.</p>
       </div>
-      <div class="hero-image-wrapper">
-        <img src="images/hero-farm.png" alt="Fresh Organic Farms produce, premium crop fields">
-        <div class="hero-badge">
-          <div class="hero-badge-icon">🌾</div>
-          <div>
-            <h4 style="font-size: 1rem; color: var(--primary-color);">Freshly Harvested</h4>
-            <p style="font-size: 0.85rem; margin: 0;">Straight from our farms</p>
-          </div>
-        </div>
+
+      <div style="text-align: center; margin-top: 2.5rem;">
+        <a href="contact.html?type=subscription" class="btn btn-primary">Enquire / Subscribe Now</a>
       </div>
     </div>
   </section>
 
-  <!-- Why Choose Us -->
+  <!-- Subscription Options Grid -->
   <section style="background-color: var(--bg-alt);">
-    <div class="section-header">
-      <span>Trust & Quality</span>
-      <h2>Why Choose Organica?</h2>
-      <p>We design our entire cultivation and supply chain to guarantee optimal flavor, nutritional value, and absolute freshness.</p>
-    </div>
-    <div class="features-grid">
-      <div class="feature-box">
-        <img src="images/organic-farming.png" alt="Organic Farming" class="feature-box-image">
-        <h3>100% Organic Farming</h3>
-        <p>No synthetic chemicals, hormones, or pesticides. Only compost, sun, and pure water used for nourishing our crops.</p>
-      </div>
-      <div class="feature-box">
-        <img src="images/eco-packing.png" alt="Eco-Friendly Packing" class="feature-box-image">
-        <h3>Eco-Friendly Packing</h3>
-        <p>We deliver using biodegradable packaging and zero-plastic solutions, ensuring a greener planet for future generations.</p>
-      </div>
-      <div class="feature-box">
-        <img src="images/fair-trade.png" alt="Fair Trade Sourcing" class="feature-box-image">
-        <h3>Fair Trade Sourcing</h3>
-        <p>We support local farmers with fair wages, promoting stable livelihoods and strong community partnerships.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sourcing Process -->
-  <section style="background-color: var(--bg-color);">
-    <div class="section-header">
-      <span>The Farm-to-Table Journey</span>
-      <h2>Our Sourcing Process</h2>
-      <p>How we ensure your organic fresh produce makes it safely to your table in record time.</p>
-    </div>
-    <div class="sourcing-steps">
-      <div class="sourcing-step">
-        <div class="sourcing-step-number">1</div>
-        <h3>Careful Sowing</h3>
-        <p>Using premium heritage non-GMO seeds planted in organic soil.</p>
-      </div>
-      <div class="sourcing-step">
-        <div class="sourcing-step-number">2</div>
-        <h3>Natural Growth</h3>
-        <p>Cared for by local farmers using natural fertilizers and rainwater.</p>
-      </div>
-      <div class="sourcing-step">
-        <div class="sourcing-step-number">3</div>
-        <h3>Morning Harvest</h3>
-        <p>Hand-picked at peak ripeness to preserve taste and vitamins.</p>
-      </div>
-      <div class="sourcing-step">
-        <div class="sourcing-step-number">4</div>
-        <h3>Express Delivery</h3>
-        <p>Packed carefully in cold-storage boxes and shipped to your home.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Subscription Bundle Preview -->
-  <section style="background-color: var(--bg-alt);">
-    <div class="section-header">
-      <span>Simplify Your Lifestyle</span>
-      <h2>Preview Our Weekly Bundles</h2>
-      <p>Get fresh produce regularly at discounted prices. Pause or cancel your order at any time.</p>
-    </div>
     <div class="subscription-grid">
       <div class="subscription-card">
         <div class="subscription-header">
           <h3>Fresh Produce Box</h3>
-          <p>Perfect for fresh salads and juices</p>
+          <p>Ideal for personal fresh juices, organic salads, and healthy greens.</p>
           <div class="subscription-price">$35.00<span>/week</span></div>
         </div>
         <div class="subscription-features">
           <ul>
             <li>8-10 seasonal organic vegetables</li>
-            <li>Free morning delivery</li>
-            <li>Cancel or pause anytime</li>
+            <li>Harvested early morning & shipped cold</li>
+            <li>Free regional doorstep delivery</li>
+            <li>Pause or swap vegetables anytime</li>
           </ul>
         </div>
         <div class="subscription-footer">
-          <a href="subscriptions.html" class="btn btn-secondary">Get Box Now</a>
+          <a href="contact.html?box=produce" class="btn btn-secondary">Get Box Now</a>
         </div>
       </div>
 
       <div class="subscription-card popular">
-        <span class="popular-tag">Most Popular</span>
+        <span class="popular-tag">Popular</span>
         <div class="subscription-header">
           <h3>Family Essentials Box</h3>
-          <p>Complete weekly nutrition for families</p>
+          <p>Complete clean weekly nutrition for a family of four.</p>
           <div class="subscription-price">$65.00<span>/week</span></div>
         </div>
         <div class="subscription-features">
           <ul>
-            <li>15-18 seasonal fruits & vegetables</li>
-            <li>Includes farm-fresh honey</li>
-            <li>Priority morning delivery</li>
-            <li>Pause or custom schedule</li>
+            <li>15-18 types of fruits & green vegetables</li>
+            <li>Includes organic raw forest honey jar</li>
+            <li>Priority chilled morning delivery</li>
+            <li>Fully customizable vegetable selection</li>
           </ul>
         </div>
         <div class="subscription-footer">
-          <a href="subscriptions.html" class="btn btn-primary">Subscribe Now</a>
+          <a href="contact.html?box=family" class="btn btn-primary">Subscribe Now</a>
         </div>
       </div>
 
       <div class="subscription-card">
         <div class="subscription-header">
           <h3>Healthy Pantry Box</h3>
-          <p>For modern organic cooks</p>
+          <p>For home cooks seeking cold-pressed oils & grains.</p>
           <div class="subscription-price">$85.00<span>/week</span></div>
         </div>
         <div class="subscription-features">
           <ul>
-            <li>Cold-pressed oils & custom grains</li>
-            <li>Superfood seeds & premium nuts</li>
-            <li>Bi-weekly specialty coffee beans</li>
+            <li>Cold-pressed extra virgin olive oil</li>
+            <li>Heritage quinoa, seeds, and premium nuts</li>
+            <li>Freshly roasted small-batch coffee beans</li>
+            <li>Cancel or reschedule at any time</li>
           </ul>
         </div>
         <div class="subscription-footer">
-          <a href="subscriptions.html" class="btn btn-secondary">Get Box Now</a>
+          <a href="contact.html?box=pantry" class="btn btn-secondary">Get Box Now</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Customer Testimonials -->
+  <!-- FAQ Accordion -->
   <section style="background-color: var(--bg-color);">
     <div class="section-header">
-      <span>What they say</span>
-      <h2>Real Reviews from Happy Families</h2>
-      <p>Hear why local households count on us for organic food delivery.</p>
+      <span>Common Questions</span>
+      <h2>Subscription FAQ</h2>
+      <p>Have questions about delivery, organic standards, or how to pause? Read below.</p>
     </div>
-    <div class="testimonial-slider">
-      <p class="testimonial-quote">"The organic spinach and cold-pressed olive oil are outstanding. You can tell they care about freshness. Every delivery arrives crisp and chilled. Highly recommended!"</p>
-      <div class="testimonial-author">
-        <div class="testimonial-author-info">
-          <h4>Sophia Anderson</h4>
-          <span>Verified Buyer, Boston</span>
+    <div class="faq-container">
+      <div class="faq-item">
+        <div class="faq-header">
+          <h3>When will my organic box arrive?</h3>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-body">
+          <p>We deliver boxes every Tuesday and Friday morning between 7:00 AM and 11:00 AM to preserve cool temperature of fresh crops. You will receive an SMS tracking link once our driver departs.</p>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Final Shop CTA -->
-  <section style="background-color: var(--primary-color); color: var(--white); text-align: center; padding: 7rem 2rem;">
-    <div style="max-width: 700px; margin: 0 auto;">
-      <h2 style="color: var(--white); font-size: 2.8rem; margin-bottom: 1.5rem;">Start Eating Healthy, Earthy & Tasty Organic Food Today</h2>
-      <p style="color: var(--primary-soft); margin-bottom: 2.5rem; font-size: 1.15rem;">Enjoy organic, locally sourced groceries delivered straight to your door. Freshness guaranteed on every order.</p>
-      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-        <a href="products.html" class="btn btn-accent">Shop Organic Now</a>
-        <a href="contact.html" class="btn btn-secondary" style="border-color: var(--white); color: var(--white) !important;">Contact Support</a>
+      <div class="faq-item">
+        <div class="faq-header">
+          <h3>Can I customize the vegetables in my box?</h3>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-body">
+          <p>Yes, absolutely! Subscribed members receive an email every Sunday showing the upcoming harvest list. You can log in and swap out any items you do not want with alternatives.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-header">
+          <h3>How do I pause or cancel my subscription?</h3>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-body">
+          <p>You can pause or cancel at any time directly through your user dashboard with no cancellation fees or lock-in contracts. Make sure to update your schedule before Monday noon.</p>
+        </div>
       </div>
     </div>
   </section>

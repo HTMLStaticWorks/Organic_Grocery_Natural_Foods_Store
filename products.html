@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium Product Discovery | Organica Catalogue</title>
+  <meta name="description"
+    content="Discover premium organic groceries, fresh local vegetables, ripe fruits, grains, seeds, raw pantry honey, and cold-pressed oils.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+</head>
+
+<body>
+
+  <!-- Premium Header -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">🌿 Organica</a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home 1</a>
+        <a href="home2.html" class="nav-link">Home 2</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="products.html" class="nav-link active">Products</a>
+        <a href="stories.html" class="nav-link">Farm Stories</a>
+        <a href="subscriptions.html" class="nav-link">Subscriptions</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" aria-label="Toggle Light/Dark Theme">🌙</button>
+        <button class="rtl-toggle-btn" aria-label="Toggle RTL/LTR Direction">RTL</button>
+        <a href="login.html" class="btn btn-secondary" style="padding: 0.5rem 1.25rem; font-size: 0.9rem;">Login</a>
+        <button class="hamburger" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Product Discovery Hero -->
+  <section style="background-image: linear-gradient(rgba(27, 67, 50, 0.8), rgba(27, 67, 50, 0.8)), url('https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=1600'); background-size: cover; background-position: center; padding: 8rem 2rem; text-align: center; color: var(--white); min-height: 400px; display: flex; align-items: center; justify-content: center;">
+    <div style="max-width: 800px; margin: 0 auto;">
+      <span style="color: var(--accent-light); font-weight: 600; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 1rem;">Healthy Selections</span>
+      <h1 style="font-family: var(--font-serif); font-size: 3.5rem; margin-bottom: 1.5rem; color: var(--white);">Discover Our Harvest</h1>
+      <p style="font-size: 1.2rem; color: rgba(255, 255, 255, 0.9); margin-bottom: 0;">Clean, certified organic grocery products sourced with careful agricultural integrity.</p>
+    </div>
+  </section>
+
+  <!-- Product Catalogue & Filtering -->
+  <section style="background-color: var(--bg-color); padding-top: 2rem;">
+    <div class="filter-container">
+      <button class="filter-btn active" data-filter="all">All Products</button>
+      <button class="filter-btn" data-filter="vegetables">Vegetables</button>
+      <button class="filter-btn" data-filter="fruits">Fruits</button>
+      <button class="filter-btn" data-filter="grains">Grains & Pulses</button>
+      <button class="filter-btn" data-filter="seeds">Nuts & Seeds</button>
+      <button class="filter-btn" data-filter="pantry">Natural Pantry</button>
+      <button class="filter-btn" data-filter="oils">Cold-Pressed Oils</button>
+    </div>
+
+    <div class="products-grid">
+      <!-- Veg -->
+      <div class="product-card" data-category="vegetables">
+        <span class="product-badge">Fresh</span>
+        <div class="product-img-container">
+          <img src="https://images.unsplash.com/photo-1574316071802-0d684efa7bf5?auto=format&fit=crop&q=80&w=500"
+            alt="Crisp spinach greens">
+        </div>
+        <div class="product-details">
+          <span class="product-cat">Vegetables</span>
+          <h3>Organic Baby Spinach</h3>
+          <p class="product-desc">Tender, pre-washed baby spinach leaves harvested at peak crispness. Great for green
+            salads and smoothies.</p>
+          <div class="product-footer">
+            <span class="product-price">$3.50</span>
+            <a href="contact.html?product=spinach" class="btn btn-primary"
+              style="padding: 0.5rem 1rem; font-size: 0.85rem;">Enquire / Buy</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fruits -->
+      <div class="product-card" data-category="fruits">
+        <span class="product-badge">Sweet</span>
+        <div class="product-img-container">
+          <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?auto=format&fit=crop&q=80&w=500"
+            alt="Crispy Red Apples">
+        </div>
+        <div class="product-details">
+          <span class="product-cat">Fruits</span>
+          <h3>Honeycrisp Apples</h3>
+          <p class="product-desc">Sweet, tart, and extraordinarily crisp organic apples from our sustainable mountain
+            orchards.</p>
+          <div class="product-footer">
+            <span class="product-price">$4.20</span>
+            <a href="contact.html?product=apples" class="btn btn-primary"
+              style="padding: 0.5rem 1rem; font-size: 0.85rem;">Enquire / Buy</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Grains -->
+      <div class="product-card" data-category="grains">
+        <span class="product-badge">Heritage</span>
+        <div class="product-img-container">
+          <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&q=80&w=500"
+            alt="Organic Quinoa grains">
+        </div>
+        <div class="product-details">
+          <span class="product-cat">Grains & Pulses</span>
+          <h3>Tri-Color Quinoa</h3>
+          <p class="product-desc">Gluten-free, high-protein organic heritage grains milled carefully to preserve
+            absolute nutritional density.</p>
+          <div class="product-footer">
+            <span class="product-price">$6.00</span>
+            <a href="contact.html?product=quinoa" class="btn btn-primary"
+              style="padding: 0.5rem 1rem; font-size: 0.85rem;">Enquire / Buy</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Seeds -->
+      <div class="product-card" data-category="seeds">
+        <span class="product-badge">Nutrient Rich</span>
+        <div class="product-img-container">
+          <img src="https://images.pexels.com/photos/7771987/pexels-photo-7771987.jpeg" alt="Premium Chia Seeds">
+        </div>
+        <div class="product-details">
+          <span class="product-cat">Nuts & Seeds</span>
+          <h3>Organic Chia Seeds</h3>
+          <p class="product-desc">Fiber-rich premium black chia seeds, perfect for puddings, morning oats, or healthy
+            bakery creations.</p>
+          <div class="product-footer">
+            <span class="product-price">$5.50</span>
+            <a href="contact.html?product=chia" class="btn btn-primary"
+              style="padding: 0.5rem 1rem; font-size: 0.85rem;">Enquire / Buy</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pantry -->
+      <div class="product-card" data-category="pantry">
+        <span class="product-badge">Raw</span>
+        <div class="product-img-container">
+          <img src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&q=80&w=500"
+            alt="Raw Forest Honey jar">
+        </div>
+        <div class="product-details">
+          <span class="product-cat">Natural Pantry</span>
+          <h3>Wildwood Raw Honey</h3>
+          <p class="product-desc">Unpasteurized, unfiltered honey gathered sustainably from wildflower hives in deep
+            certified forests.</p>
+          <div class="product-footer">
+            <span class="product-price">$8.90</span>
+            <a href="contact.html?product=honey" class="btn btn-primary"
+              style="padding: 0.5rem 1rem; font-size: 0.85rem;">Enquire / Buy</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Oils -->
+      <div class="product-card" data-category="oils">
+        <span class="product-badge">Pure Cold-Pressed</span>
+        <div class="product-img-container">
+          <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&q=80&w=500"
+            alt="Olive oil bottle">
+        </div>
+        <div class="product-details">
+          <span class="product-cat">Cold-Pressed Oils</span>
+          <h3>Extra Virgin Olive Oil</h3>
+          <p class="product-desc">First cold-pressed olive oil extracted carefully from estate-grown, early harvest
+            olives. Full body flavor.</p>
+          <div class="product-footer">
+            <span class="product-price">$12.50</span>
+            <a href="contact.html?product=oliveoil" class="btn btn-primary"
+              style="padding: 0.5rem 1rem; font-size: 0.85rem;">Enquire / Buy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">🌿 Organica</a>
+        <p>Bringing authentic organic nutrition and fresh produce directly from regional farms to conscious tables.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-icon" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Twitter">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+              </path>
+            </svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="YouTube">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+              </path>
+              <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home 1</a></li>
+          <li><a href="home2.html">Home 2</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="stories.html">Farm Stories</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Categories</h3>
+        <ul>
+          <li><a href="products.html">Fresh Fruits</a></li>
+          <li><a href="products.html">Vegetables</a></li>
+          <li><a href="products.html">Nuts & Seeds</a></li>
+          <li><a href="products.html">Cold-Pressed Oils</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Subscribe to Newsletter</h3>
+        <p>Stay informed about seasonal harvests, farm events, and exclusive discounts.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" required aria-label="Email Address">
+          <button type="submit" class="btn btn-primary" style="padding: 0.75rem 1.5rem;">Join</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Organica. All rights reserved.</p>
+      <p>Locally sourced with love 💚</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
