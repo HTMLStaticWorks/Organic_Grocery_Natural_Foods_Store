@@ -1261,6 +1261,24 @@ section {
   animation: fadeInUp 0.4s ease forwards;
 }
 
+/* Mobile Actions for Hamburger Menu */
+.mobile-actions {
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+  margin-top: 1rem;
+}
+
+.mobile-actions .theme-toggle-btn,
+.mobile-actions .rtl-toggle-btn {
+  justify-content: flex-start;
+  padding: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
 /* Responsive Breakpoints */
 @media (max-width: 1024px) {
   h1 {
@@ -1300,9 +1318,8 @@ section {
   .seasonal-showcase {
     grid-template-columns: 1fr;
   }
-}
-
-@media (max-width: 768px) {
+  
+  /* Mobile Nav (Tab + Mob) */
   .hamburger {
     display: flex;
   }
@@ -1315,13 +1332,33 @@ section {
     background-color: var(--bg-color);
     flex-direction: column;
     padding: 3rem 2rem;
-    gap: 2rem;
+    gap: 1.5rem;
     box-shadow: var(--shadow-md);
     transition: var(--transition);
     align-items: flex-start;
+    overflow-y: auto;
   }
   .nav-menu.active {
     left: 0;
+  }
+  .nav-actions > *:not(.hamburger) {
+    display: none;
+  }
+  .mobile-actions {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    padding: 1rem 1.25rem;
+  }
+  .logo {
+    font-size: 1.4rem;
+    white-space: nowrap;
+  }
+  .nav-actions {
+    gap: 0.75rem;
   }
   .category-grid {
     grid-template-columns: 1fr 1fr;

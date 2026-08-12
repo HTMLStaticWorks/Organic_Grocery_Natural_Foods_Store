@@ -2,14 +2,14 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Theme Management (Light / Dark Toggle)
-  const themeToggle = document.querySelector('.theme-toggle-btn');
+  const themeToggles = document.querySelectorAll('.theme-toggle-btn');
   const storedTheme = localStorage.getItem('theme') || 'light';
   
   document.documentElement.setAttribute('data-theme', storedTheme);
   updateThemeIcon(storedTheme);
 
-  if (themeToggle) {
-    themeToggle.addEventListener('click', () => {
+  themeToggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
       const currentTheme = document.documentElement.getAttribute('data-theme');
       const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
       
@@ -18,28 +18,29 @@ document.addEventListener('DOMContentLoaded', () => {
       updateThemeIcon(newTheme);
       showAlert(`Switched to ${newTheme} theme`);
     });
-  }
+  });
 
   function updateThemeIcon(theme) {
-    if (!themeToggle) return;
-    if (theme === 'dark') {
-      themeToggle.innerHTML = '☀️';
-      themeToggle.setAttribute('aria-label', 'Switch to light theme');
-    } else {
-      themeToggle.innerHTML = '🌙';
-      themeToggle.setAttribute('aria-label', 'Switch to dark theme');
-    }
+    themeToggles.forEach(toggle => {
+      if (theme === 'dark') {
+        toggle.innerHTML = '☀️';
+        toggle.setAttribute('aria-label', 'Switch to light theme');
+      } else {
+        toggle.innerHTML = '🌙';
+        toggle.setAttribute('aria-label', 'Switch to dark theme');
+      }
+    });
   }
 
   // 1b. RTL Direction Management (LTR / RTL Toggle)
-  const rtlToggle = document.querySelector('.rtl-toggle-btn');
+  const rtlToggles = document.querySelectorAll('.rtl-toggle-btn');
   const storedDir = localStorage.getItem('dir') || 'ltr';
   
   document.documentElement.setAttribute('dir', storedDir);
   updateRtlIcon(storedDir);
  
-  if (rtlToggle) {
-    rtlToggle.addEventListener('click', () => {
+  rtlToggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
       const currentDir = document.documentElement.getAttribute('dir') || 'ltr';
       const newDir = currentDir === 'rtl' ? 'ltr' : 'rtl';
       
@@ -48,17 +49,18 @@ document.addEventListener('DOMContentLoaded', () => {
       updateRtlIcon(newDir);
       showAlert(`Switched to ${newDir.toUpperCase()} layout`);
     });
-  }
+  });
  
   function updateRtlIcon(dir) {
-    if (!rtlToggle) return;
-    if (dir === 'rtl') {
-      rtlToggle.innerHTML = 'LTR';
-      rtlToggle.setAttribute('aria-label', 'Switch to LTR layout');
-    } else {
-      rtlToggle.innerHTML = 'RTL';
-      rtlToggle.setAttribute('aria-label', 'Switch to RTL layout');
-    }
+    rtlToggles.forEach(toggle => {
+      if (dir === 'rtl') {
+        toggle.innerHTML = 'LTR';
+        toggle.setAttribute('aria-label', 'Switch to LTR layout');
+      } else {
+        toggle.innerHTML = 'RTL';
+        toggle.setAttribute('aria-label', 'Switch to RTL layout');
+      }
+    });
   }
 
   // 2. Mobile Responsive Menu
