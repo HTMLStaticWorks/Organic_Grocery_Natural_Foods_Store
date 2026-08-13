@@ -203,6 +203,10 @@ body {
   background-color: #0a0f0c !important;
 }
 
+[data-theme="dark"] .final-cta p {
+  color: var(--primary-color) !important;
+}
+
 .nav-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -381,6 +385,7 @@ footer {
   color: var(--text-main);
   outline: none;
   flex: 1;
+  min-width: 0;
 }
 
 .footer-socials {
@@ -1576,7 +1581,11 @@ section {
     grid-template-columns: 1fr;
   }
   footer {
-    padding-right: 3.5rem;
+    padding: 4rem 1.5rem 2rem;
+  }
+  .newsletter-form {
+    flex-direction: column;
+    align-items: stretch;
   }
   .footer-bottom {
     flex-direction: column;
@@ -1740,4 +1749,7 @@ section {
   width: 20px;
   height: 20px;
 }
+
+
+
 
