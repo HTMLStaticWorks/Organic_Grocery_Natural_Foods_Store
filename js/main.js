@@ -47,7 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
       document.documentElement.setAttribute('dir', newDir);
       localStorage.setItem('dir', newDir);
       updateRtlIcon(newDir);
-      showAlert(`Switched to ${newDir.toUpperCase()} layout`);
     });
   });
  
