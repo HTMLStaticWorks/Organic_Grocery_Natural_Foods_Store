@@ -180,8 +180,10 @@ button, input, select, textarea {
 
 /* Header styling */
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 1000;
   background-color: rgba(252, 251, 247, 0.85);
   backdrop-filter: blur(12px);
@@ -189,8 +191,16 @@ header {
   transition: var(--transition);
 }
 
+body {
+  padding-top: 80px;
+}
+
 [data-theme="dark"] header {
   background-color: rgba(18, 28, 23, 0.85);
+}
+
+[data-theme="dark"] .final-cta {
+  background-color: #0a0f0c !important;
 }
 
 .nav-container {
@@ -437,6 +447,7 @@ section {
 .hero-content {
   position: relative;
   z-index: 2;
+  text-align: center;
 }
 
 .hero-tag {
@@ -463,6 +474,7 @@ section {
 .hero-actions {
   display: flex;
   gap: 1rem;
+  justify-content: center;
 }
 
 .hero-image-wrapper {
@@ -1386,6 +1398,11 @@ section {
   }
   .features-grid {
     grid-template-columns: 1fr;
+  }
+  .feature-box-image {
+    height: auto;
+    max-height: 280px;
+    object-fit: contain;
   }
   .sourcing-steps {
     grid-template-columns: 1fr 1fr;
